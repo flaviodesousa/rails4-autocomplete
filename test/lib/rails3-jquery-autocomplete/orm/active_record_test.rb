@@ -50,6 +50,7 @@ module Rails4Autocomplete
           mock(self).get_autocomplete_where_clause(model, term, method, {}) { ["WHERE something"] }
           mock(model).table_name.times(any_times) { 'model_table_name' }
 
+          mock(model).all { model }
           mock(model).scoped { model }
           mock(model).select(["field"]) { model }
           mock(model).where(["WHERE something"]).mock!.limit(10).mock!.
