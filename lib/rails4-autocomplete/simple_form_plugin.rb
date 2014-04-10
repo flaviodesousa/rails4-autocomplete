@@ -16,7 +16,7 @@ module SimpleForm
     class AutocompleteInput < Base
       include Autocomplete
 
-      def input(wrapper_options)
+      def input(wrapper_options=nil)
         @builder.autocomplete_field(
           attribute_name,
           options[:url],

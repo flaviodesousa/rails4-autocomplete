@@ -23,4 +23,6 @@ tmp
 .bundle
 .rvmrc
 .gemrc
+.ruby-version
+.ruby-gemset
 Gemfile.lock

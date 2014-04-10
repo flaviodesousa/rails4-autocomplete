@@ -41,7 +41,9 @@ module Rails4Autocomplete
             :model => model,
             :term => term,
             :method => method,
-            :options => {}
+            :options => {
+              :scopes => [ :scoped ]
+            }
           }
 
           mock(self).get_autocomplete_limit(anything) { 10 }
