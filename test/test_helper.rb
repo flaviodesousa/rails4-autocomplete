@@ -14,7 +14,6 @@ end
 require 'rails/all'
 require 'mongoid'
 require 'mongo_mapper'
-require 'minitest'
 require 'shoulda'
 require 'rr'
 require 'rails/test_help'
