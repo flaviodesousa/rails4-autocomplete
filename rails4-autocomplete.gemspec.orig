@@ -15,11 +15,19 @@ Gem::Specification.new do |s|
 
   s.add_dependency('rails', '>=4.0')
 
+<<<<<<< HEAD
   s.add_development_dependency 'activerecord-nulldb-adapter'
+  s.add_development_dependency 'mongoid',      '>= 2.0.0'
+  s.add_development_dependency 'mongo_mapper', '>= 0.9'
+  s.add_development_dependency 'mongo',        '~> 1.6.2'
+  s.add_development_dependency 'bson_ext',     '~> 1.6.2'
+=======
+  s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'mongoid',      '>= 4.0.0.beta1'
   s.add_development_dependency 'mongo_mapper-unstable'
   s.add_development_dependency 'mongo'
   s.add_development_dependency 'bson_ext'
+>>>>>>> 7d743829caba83b8721c56eef00e20100be09bd2
   s.add_development_dependency 'guard'
   s.add_development_dependency 'guard-test'
   s.add_development_dependency 'test-unit',    '~> 2.2.0'

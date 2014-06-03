@@ -16,11 +16,11 @@ module SimpleForm
     class AutocompleteInput < Base
       include Autocomplete
 
-      def input
+      def input(wrapper_options=nil)
         @builder.autocomplete_field(
           attribute_name,
           options[:url],
-          rewrite_autocomplete_option
+          merge_wrapper_options(rewrite_autocomplete_option, wrapper_options)
         )
       end
 

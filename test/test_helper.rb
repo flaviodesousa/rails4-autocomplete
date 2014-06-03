@@ -14,6 +14,7 @@ end
 require 'rails/all'
 require 'mongoid'
 require 'mongo_mapper'
+require 'minitest'
 require 'shoulda'
 require 'rr'
 require 'rails/test_help'
@@ -25,12 +26,7 @@ module Rails4Autocomplete
 end
 
 Rails4Autocomplete::Application.routes.draw do
-  match '/:controller(/:action(/:id))'
+  match '/:controller(/:action(/:id))', via: [:get]
 end
 
 ActionController::Base.send :include, Rails4Autocomplete::Application.routes.url_helpers
-
-class Test::Unit::TestCase
-  include RR::Adapters::TestUnit
-end
-
