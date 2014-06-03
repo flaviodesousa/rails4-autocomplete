@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'active_record'
 
 module Rails4Autocomplete
   module Orm
@@ -29,8 +30,9 @@ module Rails4Autocomplete
 
       context '#get_autocomplete_items' do
         should 'retrieve the items from ActiveRecord' do
-          class Dog ; end
+          class Dog < ::ActiveRecord::Base ; end
 
+          ::ActiveRecord::Base.establish_connection :adapter => :nulldb
           model = Dog
           scoped = []
           whered = []

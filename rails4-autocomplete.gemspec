@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name = %q{rails4-autocomplete}
   s.version = Rails4Autocomplete::VERSION
   s.platform = Gem::Platform::RUBY
-  s.authors = ["alex_tian"]
+  s.authors = ["alex_tian", "flaviodesousa"]
   s.email = %q{peterwillcn@gmail.com}
   s.homepage = %q{http://github.com/peterwillcn/rails4-autocomplete}
   s.summary = %q{Use jQuery's autocomplete plugin with Rails 4.}
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency('rails', '>=3.0')
 
-  s.add_development_dependency 'sqlite3-ruby'
+  s.add_development_dependency 'activerecord-nulldb-adapter'
   s.add_development_dependency 'mongoid',      '>= 2.0.0'
   s.add_development_dependency 'mongo_mapper', '>= 0.9'
   s.add_development_dependency 'mongo',        '~> 1.6.2'
